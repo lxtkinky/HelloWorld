@@ -1,0 +1,6 @@
+platform :ios, '10.2'
+use_frameworks!
+
+target 'HelloWorld' do
+pod 'ReactiveCocoa', '~> 4.0.0'
+end
