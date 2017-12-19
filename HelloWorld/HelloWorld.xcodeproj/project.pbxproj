@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5257DE6D1FE8BE130094C259 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5257DE6C1FE8BE130094C259 /* SecondViewController.m */; };
+		5257DEEE1FE8FABC0094C259 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5257DEED1FE8FABC0094C259 /* ThirdViewController.m */; };
 		52D05EC41FE791F6001D7226 /* UIViewController+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D05EC31FE791F6001D7226 /* UIViewController+Test.m */; };
 		52D05EED1FE79A89001D7226 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D05EEC1FE79A89001D7226 /* UIKit.framework */; };
 		52D05F091FE79AFD001D7226 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D05EEF1FE79AFD001D7226 /* Info.plist */; };
@@ -54,6 +55,8 @@
 /* Begin PBXFileReference section */
 		5257DE6B1FE8BE130094C259 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		5257DE6C1FE8BE130094C259 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		5257DEEC1FE8FABC0094C259 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		5257DEED1FE8FABC0094C259 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		52D05EC21FE791F6001D7226 /* UIViewController+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Test.h"; sourceTree = "<group>"; };
 		52D05EC31FE791F6001D7226 /* UIViewController+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Test.m"; sourceTree = "<group>"; };
 		52D05EEC1FE79A89001D7226 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -219,6 +222,8 @@
 				52E70A131FE7657F0061213C /* ViewController.m */,
 				5257DE6B1FE8BE130094C259 /* SecondViewController.h */,
 				5257DE6C1FE8BE130094C259 /* SecondViewController.m */,
+				5257DEEC1FE8FABC0094C259 /* ThirdViewController.h */,
+				5257DEED1FE8FABC0094C259 /* ThirdViewController.m */,
 				52D05F151FE79F2D001D7226 /* ViewModel.h */,
 				52D05F161FE79F2D001D7226 /* ViewModel.m */,
 				52D05F181FE79F87001D7226 /* UserEntity.h */,
@@ -461,6 +466,7 @@
 				5257DE6D1FE8BE130094C259 /* SecondViewController.m in Sources */,
 				52D05EC41FE791F6001D7226 /* UIViewController+Test.m in Sources */,
 				52E70A0E1FE7657F0061213C /* main.m in Sources */,
+				5257DEEE1FE8FABC0094C259 /* ThirdViewController.m in Sources */,
 				52D05F171FE79F2D001D7226 /* ViewModel.m in Sources */,
 				52D05F0A1FE79AFD001D7226 /* MASCompositeConstraint.m in Sources */,
 				52D05F111FE79AFD001D7226 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,

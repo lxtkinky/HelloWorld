@@ -68,6 +68,39 @@
         _button.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
             NSLog(@"%@", input);
             [self.delegateSubject sendNext:@"hello"];
+//            //验证在子线程中更新UI
+//            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//                //会立即更新UI
+//                dispatch_async(dispatch_get_main_queue(), ^{
+//                    [self.button setTitle:@"load ended" forState:UIControlStateNormal];
+//                    
+//                    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+//                    button.backgroundColor = [UIColor redColor];
+//                    [self.view addSubview:button];
+//                    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+//                        make.size.equalTo(_button);
+//                        make.centerX.equalTo(_button);
+//                        make.top.equalTo(_button.mas_bottom).with.offset(20);
+//                    }];
+//                });
+//                
+//                sleep(10);
+//                
+//                NSLog(@"sleep over");
+//            });
+//            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//                [self.button setTitle:@"load ended" forState:UIControlStateNormal];   //可以更新 ？
+//                //添加按钮会等到线程结束后才更新
+//                UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+//                button.backgroundColor = [UIColor redColor];
+//                [self.view addSubview:button];
+//                [button mas_makeConstraints:^(MASConstraintMaker *make) {
+//                    make.size.equalTo(_button);
+//                    make.centerX.equalTo(_button);
+//                    make.top.equalTo(_button.mas_bottom).with.offset(20);
+//                }];
+//                sleep(10);
+//            });
             return [RACSignal empty];
         }];
     }

@@ -11,14 +11,19 @@ PODS:
     - ReactiveCocoa/Core
     - Result (~> 1.0.2)
   - Result (1.0.2)
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
 
 DEPENDENCIES:
   - ReactiveCocoa (~> 4.0.0)
+  - SDWebImage (~> 4.2.2)
 
 SPEC CHECKSUMS:
   ReactiveCocoa: f7011630aee4deeb16352fcb1b50d6bde9db4f90
   Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
 
-PODFILE CHECKSUM: b169ae07577a4d6766d67554cb1da227ebeb0043
+PODFILE CHECKSUM: f534ccf6262f457b9701f4defba29f78339f486f
 
 COCOAPODS: 1.2.0

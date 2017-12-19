@@ -2,5 +2,6 @@ platform :ios, '10.2'
 use_frameworks!
 
 target 'HelloWorld' do
+pod 'SDWebImage', '~> 4.2.2'
 pod 'ReactiveCocoa', '~> 4.0.0'
 end

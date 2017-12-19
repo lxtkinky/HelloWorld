@@ -18,6 +18,7 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) ViewModel *viewModel;
+@property (nonatomic, strong) UIAlertController *action;
 
 @end
 
@@ -31,8 +32,9 @@
 //    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.edges.insets(UIEdgeInsetsMake(0, 0, 0, 0));
 //    }];
+
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [self.viewModel requestDataWithPull:YES];
     });
     
@@ -74,6 +76,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    if (indexPath.row == 2) {
+        [self presentViewController:self.action animated:YES completion:nil];
+        return;
+    }
+    
     SecondViewController *secondVC = [[SecondViewController alloc] init];
     secondVC.delegateSubject = [RACSubject subject];
     @weakify(self)
@@ -105,11 +112,25 @@
     if (_viewModel == nil) {
         _viewModel = [[ViewModel alloc] init];
         [_viewModel.tableSubject subscribeNext:^(id x) {
-            [_tableView reloadData];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [_tableView reloadData];
+            });
         }];
     }
     
     return _viewModel;
 }
+
+
+- (UIAlertController *)action{
+    if (_action == nil) {
+        _action = [UIAlertController alertControllerWithTitle:@"action" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+        [_action addAction:[UIAlertAction actionWithTitle:@"yes" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            NSLog(@"yes");
+        }]];
+    }
+    return _action;
+}
+
 
 @end
