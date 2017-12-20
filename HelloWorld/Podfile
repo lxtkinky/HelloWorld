@@ -3,5 +3,5 @@ use_frameworks!
 
 target 'HelloWorld' do
 pod 'SDWebImage', '~> 4.2.2'
-pod 'ReactiveCocoa', '~> 4.0.0'
+pod 'ReactiveObjC', '~> 3.0.0'
 end

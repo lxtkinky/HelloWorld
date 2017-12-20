@@ -9,9 +9,9 @@
 #import "ViewController.h"
 #import "Masonry.h"
 #import "ViewModel.h"
-#import <ReactiveCocoa/ReactiveCocoa.h>
-#import <ReactiveCocoa/EXTScope.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 #import "SecondViewController.h"
+#import "SDWebImageController.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -78,6 +78,12 @@
     
     if (indexPath.row == 2) {
         [self presentViewController:self.action animated:YES completion:nil];
+        return;
+    }
+    
+    if (indexPath.row == 3) {
+        SDWebImageController *webImageVC = [[SDWebImageController alloc] init];
+        [self.navigationController pushViewController:webImageVC animated:YES];
         return;
     }
     

@@ -1,29 +1,17 @@
 PODS:
-  - ReactiveCocoa (4.0.1):
-    - ReactiveCocoa/UI (= 4.0.1)
-    - Result (~> 1.0.2)
-  - ReactiveCocoa/Core (4.0.1):
-    - ReactiveCocoa/no-arc
-    - Result (~> 1.0.2)
-  - ReactiveCocoa/no-arc (4.0.1):
-    - Result (~> 1.0.2)
-  - ReactiveCocoa/UI (4.0.1):
-    - ReactiveCocoa/Core
-    - Result (~> 1.0.2)
-  - Result (1.0.2)
+  - ReactiveObjC (3.0.0)
   - SDWebImage (4.2.2):
     - SDWebImage/Core (= 4.2.2)
   - SDWebImage/Core (4.2.2)
 
 DEPENDENCIES:
-  - ReactiveCocoa (~> 4.0.0)
+  - ReactiveObjC (~> 3.0.0)
   - SDWebImage (~> 4.2.2)
 
 SPEC CHECKSUMS:
-  ReactiveCocoa: f7011630aee4deeb16352fcb1b50d6bde9db4f90
-  Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
 
-PODFILE CHECKSUM: f534ccf6262f457b9701f4defba29f78339f486f
+PODFILE CHECKSUM: 7b796758ded45cab77029fe6860687756a526686
 
 COCOAPODS: 1.2.0
