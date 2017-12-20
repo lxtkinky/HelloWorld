@@ -10,9 +10,7 @@
 #endif
 #endif
 
-#import "EXTKeyPathCoding.h"
-#import "EXTScope.h"
-#import "metamacros.h"
+#import "MKAnnotationView+RACSignalSupport.h"
 #import "NSArray+RACSequenceAdditions.h"
 #import "NSData+RACSupport.h"
 #import "NSDictionary+RACSequenceAdditions.h"
@@ -34,6 +32,7 @@
 #import "NSString+RACSupport.h"
 #import "NSURLConnection+RACSupport.h"
 #import "NSUserDefaults+RACSupport.h"
+#import "RACAnnotations.h"
 #import "RACArraySequence.h"
 #import "RACBehaviorSubject.h"
 #import "RACBlockTrampoline.h"
@@ -42,7 +41,6 @@
 #import "RACCompoundDisposable.h"
 #import "RACDelegateProxy.h"
 #import "RACDisposable.h"
-#import "RACDynamicPropertySuperclass.h"
 #import "RACDynamicSequence.h"
 #import "RACDynamicSignal.h"
 #import "RACEagerSequence.h"
@@ -81,16 +79,13 @@
 #import "RACUnarySequence.h"
 #import "RACUnit.h"
 #import "RACValueTransformer.h"
-#import "ReactiveCocoa-Bridging-Header.h"
-#import "ReactiveCocoa.h"
-#import "MKAnnotationView+RACSignalSupport.h"
+#import "ReactiveObjC.h"
 #import "UIActionSheet+RACSignalSupport.h"
 #import "UIAlertView+RACSignalSupport.h"
 #import "UIBarButtonItem+RACCommandSupport.h"
 #import "UIButton+RACCommandSupport.h"
 #import "UICollectionReusableView+RACSignalSupport.h"
 #import "UIControl+RACSignalSupport.h"
-#import "UIControl+RACSignalSupportPrivate.h"
 #import "UIDatePicker+RACSignalSupport.h"
 #import "UIGestureRecognizer+RACSignalSupport.h"
 #import "UIImagePickerController+RACSignalSupport.h"
@@ -103,8 +98,10 @@
 #import "UITableViewHeaderFooterView+RACSignalSupport.h"
 #import "UITextField+RACSignalSupport.h"
 #import "UITextView+RACSignalSupport.h"
-#import "RACObjCRuntime.h"
+#import "RACEXTKeyPathCoding.h"
+#import "RACEXTScope.h"
+#import "RACmetamacros.h"
 
-FOUNDATION_EXPORT double ReactiveCocoaVersionNumber;
-FOUNDATION_EXPORT const unsigned char ReactiveCocoaVersionString[];
+FOUNDATION_EXPORT double ReactiveObjCVersionNumber;
+FOUNDATION_EXPORT const unsigned char ReactiveObjCVersionString[];
 
