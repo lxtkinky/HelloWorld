@@ -30,6 +30,9 @@
         make.height.mas_equalTo(50);
     }];
     
+    UILabel *label = [[UILabel alloc] init];
+    label.textAlignment = UITextAlignmentLeft;
+    
 //    [_delegateSubject sendNext:@"hello"];
 }
 

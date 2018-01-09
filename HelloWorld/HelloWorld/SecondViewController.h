@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : BaseViewController
 
 @property (nonatomic, strong) RACSubject *delegateSubject;
 

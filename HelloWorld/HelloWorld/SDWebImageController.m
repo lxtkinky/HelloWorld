@@ -50,6 +50,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc{
+    NSLog(@"回收controller");
+}
+
 /*
 #pragma mark - Navigation
 

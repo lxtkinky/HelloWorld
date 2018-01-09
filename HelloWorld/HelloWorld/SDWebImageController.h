@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SDWebImageController : UIViewController
+@interface SDWebImageController : BaseViewController
 
 @end

@@ -7,17 +7,43 @@
 //
 
 #import "AppDelegate.h"
+#import <BaiduMapAPI_Base/BMKMapManager.h>
+#import "AppDelegate+BMKMAP.h"
 
-@interface AppDelegate ()
+extern BMKMapManager *mapManager;
+
+@interface AppDelegate ()<BMKGeneralDelegate>
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate{
+    BMKMapManager *_manager;
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    _manager = [[BMKMapManager alloc] init];
+    [_manager start:@"pWKVccKiI6LI7ke43BhToi6l" generalDelegate:self];
+    
     return YES;
+}
+
+/**
+ *返回网络错误
+ *@param iError 错误号
+ */
+- (void)onGetNetworkState:(int)iError{
+    
+}
+
+/**
+ *返回授权验证错误
+ *@param iError 错误号 : 为0时验证通过，具体参加BMKPermissionCheckResultCode
+ */
+- (void)onGetPermissionState:(int)iError{
+    
 }
 
 
@@ -45,6 +71,11 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+    [self aliapyWithURL:url];
+    return YES;
 }
 
 
