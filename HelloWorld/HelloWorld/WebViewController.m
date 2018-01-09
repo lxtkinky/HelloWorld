@@ -39,6 +39,10 @@ static NSString *token = @"eyJhbGciOiJIUzI1NiIsImV4cCI6MTUxNTEyNjIwOSwiaWF0IjoxN
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc{
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
+}
+
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
     NSLog(@"%ld", navigationType);
     return YES;

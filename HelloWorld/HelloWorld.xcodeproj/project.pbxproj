@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520B95E020045BE200E6DD54 /* VFNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B95DE20045BE200E6DD54 /* VFNetAPIClient.m */; };
+		520B95E320045C7C00E6DD54 /* LXTNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B95E220045C7C00E6DD54 /* LXTNetworkManager.m */; };
+		520B95FB2004640A00E6DD54 /* CMRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B95F12004640A00E6DD54 /* CMRequest.m */; };
+		520B95FC2004640A00E6DD54 /* LSCoreToolCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B95F32004640A00E6DD54 /* LSCoreToolCenter.m */; };
 		520ED5961FF5E1E0000D97A7 /* LTImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ED5951FF5E1E0000D97A7 /* LTImageUtil.m */; };
 		520ED5E11FF630FF000D97A7 /* UIAlertController+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ED5E01FF630FF000D97A7 /* UIAlertController+Custom.m */; };
 		520ED5E41FF6321C000D97A7 /* UIAlertAction+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ED5E31FF6321C000D97A7 /* UIAlertAction+Custom.m */; };
@@ -115,6 +119,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		520B95DE20045BE200E6DD54 /* VFNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFNetAPIClient.m; sourceTree = "<group>"; };
+		520B95DF20045BE200E6DD54 /* VFNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFNetAPIClient.h; sourceTree = "<group>"; };
+		520B95E120045C7C00E6DD54 /* LXTNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXTNetworkManager.h; sourceTree = "<group>"; };
+		520B95E220045C7C00E6DD54 /* LXTNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXTNetworkManager.m; sourceTree = "<group>"; };
+		520B95E5200460D500E6DD54 /* ACMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMacros.h; sourceTree = "<group>"; };
+		520B95E6200460D500E6DD54 /* APIMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIMacro.h; sourceTree = "<group>"; };
+		520B95E7200460D500E6DD54 /* AppMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
+		520B95E8200460D500E6DD54 /* NotificationMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationMacro.h; sourceTree = "<group>"; };
+		520B95E9200460D500E6DD54 /* ToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolView.h; sourceTree = "<group>"; };
+		520B95EA200460D500E6DD54 /* UtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
+		520B95EB200460D500E6DD54 /* VendorMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendorMarco.h; sourceTree = "<group>"; };
+		520B95F02004640A00E6DD54 /* CMRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRequest.h; sourceTree = "<group>"; };
+		520B95F12004640A00E6DD54 /* CMRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRequest.m; sourceTree = "<group>"; };
+		520B95F22004640A00E6DD54 /* LSCoreToolCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCoreToolCenter.h; sourceTree = "<group>"; };
+		520B95F32004640A00E6DD54 /* LSCoreToolCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCoreToolCenter.m; sourceTree = "<group>"; };
 		520ED5941FF5E1E0000D97A7 /* LTImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTImageUtil.h; sourceTree = "<group>"; };
 		520ED5951FF5E1E0000D97A7 /* LTImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTImageUtil.m; sourceTree = "<group>"; };
 		520ED5DF1FF630FF000D97A7 /* UIAlertController+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Custom.h"; sourceTree = "<group>"; };
@@ -334,6 +353,111 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		520B95E4200460D500E6DD54 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				520B95E5200460D500E6DD54 /* ACMacros.h */,
+				520B95E6200460D500E6DD54 /* APIMacro.h */,
+				520B95E7200460D500E6DD54 /* AppMacro.h */,
+				520B95E8200460D500E6DD54 /* NotificationMacro.h */,
+				520B95E9200460D500E6DD54 /* ToolView.h */,
+				520B95EA200460D500E6DD54 /* UtilsMacro.h */,
+				520B95EB200460D500E6DD54 /* VendorMarco.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		520B95EC2004640A00E6DD54 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				520B95ED2004640A00E6DD54 /* General */,
+				520B95EF2004640A00E6DD54 /* Helpers */,
+				520B95F42004640A00E6DD54 /* Macro */,
+				520B95F52004640A00E6DD54 /* Sections */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		520B95ED2004640A00E6DD54 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				520B95EE2004640A00E6DD54 /* Base */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		520B95EE2004640A00E6DD54 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		520B95EF2004640A00E6DD54 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				520B95F02004640A00E6DD54 /* CMRequest.h */,
+				520B95F12004640A00E6DD54 /* CMRequest.m */,
+				520B95F22004640A00E6DD54 /* LSCoreToolCenter.h */,
+				520B95F32004640A00E6DD54 /* LSCoreToolCenter.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		520B95F42004640A00E6DD54 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		520B95F52004640A00E6DD54 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				520B95F62004640A00E6DD54 /* LSSection */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		520B95F62004640A00E6DD54 /* LSSection */ = {
+			isa = PBXGroup;
+			children = (
+				520B95F72004640A00E6DD54 /* CircleList */,
+			);
+			path = LSSection;
+			sourceTree = "<group>";
+		};
+		520B95F72004640A00E6DD54 /* CircleList */ = {
+			isa = PBXGroup;
+			children = (
+				520B95F82004640A00E6DD54 /* View */,
+				520B95F92004640A00E6DD54 /* ViewController */,
+				520B95FA2004640A00E6DD54 /* ViewModel */,
+			);
+			path = CircleList;
+			sourceTree = "<group>";
+		};
+		520B95F82004640A00E6DD54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		520B95F92004640A00E6DD54 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		520B95FA2004640A00E6DD54 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		520ED5931FF5E160000D97A7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +466,10 @@
 				527809331FFB8E13001E783F /* LTProgressView.h */,
 				527809341FFB8E13001E783F /* LTProgressView.m */,
 				52E589EC1FFDFE3D001F66F5 /* DefineMacro.h */,
+				520B95DF20045BE200E6DD54 /* VFNetAPIClient.h */,
+				520B95DE20045BE200E6DD54 /* VFNetAPIClient.m */,
+				520B95E120045C7C00E6DD54 /* LXTNetworkManager.h */,
+				520B95E220045C7C00E6DD54 /* LXTNetworkManager.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -657,6 +785,8 @@
 				52A9FB3E1FEA0FBF00366036 /* HelloWorld-prefix.pch */,
 				52A9FB451FEA39B000366036 /* 22.jpg */,
 				52A9FB471FEA3CC100366036 /* movie.mp4 */,
+				520B95EC2004640A00E6DD54 /* Class */,
+				520B95E4200460D500E6DD54 /* Macro */,
 				52E589F31FFE1768001F66F5 /* Base */,
 				520ED5DD1FF63059000D97A7 /* Category */,
 				520ED5931FF5E160000D97A7 /* Utils */,
@@ -904,6 +1034,8 @@
 				52D05F131FE79AFD001D7226 /* ViewController+MASAdditions.m in Sources */,
 				52E589E21FFDD1E7001F66F5 /* NSObject+Runtime.m in Sources */,
 				52A9FB391FEA0A4400366036 /* AFNViewController.m in Sources */,
+				520B95FB2004640A00E6DD54 /* CMRequest.m in Sources */,
+				520B95E020045BE200E6DD54 /* VFNetAPIClient.m in Sources */,
 				52D05F0D1FE79AFD001D7226 /* MASLayoutConstraint.m in Sources */,
 				52E589F61FFE177E001F66F5 /* BaseViewController.m in Sources */,
 				5249FB141FFF224B005978B6 /* SVIndefiniteAnimatedView.m in Sources */,
@@ -916,10 +1048,12 @@
 				5249FB1B1FFF5193005978B6 /* WebViewController.m in Sources */,
 				5213DE391FF4E2BA00D14432 /* MJRefreshGifHeader.m in Sources */,
 				52E589F21FFE0467001F66F5 /* UIViewController+Common.m in Sources */,
+				520B95FC2004640A00E6DD54 /* LSCoreToolCenter.m in Sources */,
 				52D05F101FE79AFD001D7226 /* NSArray+MASAdditions.m in Sources */,
 				52D05F0F1FE79AFD001D7226 /* MASViewConstraint.m in Sources */,
 				527809381FFB8EFE001E783F /* ProgressViewController.m in Sources */,
 				5249FB151FFF224B005978B6 /* SVProgressAnimatedView.m in Sources */,
+				520B95E320045C7C00E6DD54 /* LXTNetworkManager.m in Sources */,
 				52D05F0E1FE79AFD001D7226 /* MASViewAttribute.m in Sources */,
 				5213DE3D1FF4E2BA00D14432 /* MJRefreshConst.m in Sources */,
 				52A9FB521FEA670B00366036 /* MapViewController.m in Sources */,
