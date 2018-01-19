@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UserEntity.h"
 #import <ReactiveObjC/ReactiveObjC.h>
 
 @interface ViewModel : NSObject

@@ -19,6 +19,7 @@
 #import "UIAlertController+Custom.h"
 #import "UIAlertAction+Custom.h"
 #import "ProgressViewController.h"
+//#import "CustomButtonController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -42,7 +43,10 @@
     _titleArray = @[@"AFN", @"AVPlayer", @"Action",@"Image", @"map",
                     @"ProgressViewController", @"KVOViewController",
                     @"WebViewController", @"AlipayViewController",
-                    @"NotificationViewController", @"ArchieveViewController"];
+                    @"NotificationViewController", @"ArchieveViewController",
+                    @"CustomButtonController", @"GCDViewController",
+                    @"FMDBController", @"CalendarController",
+                    @"LXTCalendarController"];
     
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -170,11 +174,11 @@
         [self.navigationController pushViewController:mapVC animated:YES];
         return;
     }
-    
-//    if (indexPath.row == 5) {
-//        ProgressViewController *progressVC = [[ProgressViewController alloc] init];
-//        [self.navigationController pushViewController:progressVC animated:YES];
-//        return;
+
+
+//    if (indexPath.row == 11) {
+//        UIViewController *controller = [[UIViewController alloc] initWithNibName:[_titleArray objectAtIndex:indexPath.row] bundle:nil];
+//        [self.navigationController pushViewController:controller animated:YES];
 //    }
     
     if (indexPath.row < _titleArray.count) {

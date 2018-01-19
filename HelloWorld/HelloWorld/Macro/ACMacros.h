@@ -348,6 +348,8 @@
 #define HB10 [UIFont boldSystemFontOfSize:10]
 #define HB8 [UIFont boldSystemFontOfSize:8]
 
+#define PingFang_SC_Medium  @"PingFang-SC-Medium"
+
 ///常用颜色
 #define black_color     [UIColor blackColor]
 #define blue_color      [UIColor blueColor]

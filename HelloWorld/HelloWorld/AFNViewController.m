@@ -44,22 +44,29 @@
 
 - (void)testNetWork{
    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+        NSString *urlStr = @"http://sanatorium.appvv.com/api/login/";
+        NSDictionary *param = @{@"username" : @"lixt",
+                                @"logintype" : @"pwd",
+                                @"password" : @"123456",
+                                @"code" : @"123456"};
+        [manager POST:urlStr parameters:param constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        } progress:^(NSProgress * _Nonnull uploadProgress) {
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            NSLog(@"====%@", responseObject);
+            if ([[NSThread currentThread] isMainThread]) {
+                NSLog(@"main thread");
+            }
+            else{
+                NSLog(@"other thread");
+            }
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+        }];
+    });
     
-    // Dispose of any resources that can be recreated.
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    NSString *urlStr = @"http://sanatorium.appvv.com/api/login/";
-    NSDictionary *param = @{@"username" : @"lixt",
-                            @"logintype" : @"pwd",
-                            @"password" : @"123456",
-                            @"code" : @"123456"};
-    [manager POST:urlStr parameters:param constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-    } progress:^(NSProgress * _Nonnull uploadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"====%@", responseObject);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    }];
+    
 }
 
 - (RACCommand *)networkCommand{
